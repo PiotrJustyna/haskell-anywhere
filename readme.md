@@ -6,9 +6,9 @@ Haskell anywhere. This repository demonstrates how to run your vscode-based hask
 
 * vscode
 * docker
-* external source control authentication (e.g. github + ssh)
+* optionally: ssh keys for github integration 
   
-  Git is installed by default, but to use it with e.g. github, you need to have your ssh keys available in the devcontainer (if ssh is the authentication method you're using). For the sake of simplicity, ssh keys are the preferred authentication method endorsed by this repository. [Here](https://code.visualstudio.com/docs/devcontainers/containers#_using-ssh-keys) is how to share your physical machine's ssh keys with your devcontainer (I am assuming you have the keys configured on your physical machine - it is advisable). In my case the names were slightly different, but nothing ground breaking. Simply run a command like this from your physical machine and restart your devcontainer if you have it running:
+  Git is installed by default, but to use it with e.g. github, you need to have your ssh keys available in the devcontainer (if ssh is the authentication method you're using). For the sake of simplicity, ssh keys are the preferred authentication method endorsed by this repository. [Here](https://code.visualstudio.com/docs/devcontainers/containers#_using-ssh-keys) is how to share your physical machine's ssh keys with your devcontainer. Simply run a command like this (depending on the names of your keys) from your physical machine and restart your devcontainer if you have it running:
 
   ```bash
   ssh-add $HOME/.ssh/id_rsa
