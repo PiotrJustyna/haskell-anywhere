@@ -1,21 +1,24 @@
 {
-  "name": "Haskell (Community)",
+  "name": "Haskell",
   "build": {
     "dockerfile": "Dockerfile"
   },
-  // Configure tool-specific properties.
   "customizations": {
-    // Configure properties specific to VS Code.
     "vscode": {
-      // Set *default* container specific settings.json values on container create.
       "settings": {
         "haskell.manageHLS": "GHCup"
       },
-      // Add the IDs of extensions you want installed when the container is created.
       "extensions": [
         "haskell.haskell"
       ]
     }
   },
-  "remoteUser": "vscode"
+  "remoteUser": "vscode",
+  "features": {
+    "desktop-lite": {
+      "password": "vscode",
+      "webPort": "6080",
+      "vncPort": "5901"
+    }
+  }
 }

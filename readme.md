@@ -20,6 +20,16 @@ Haskell anywhere. This repository demonstrates how to run your vscode-based hask
   git config user.name "Your Name"
   git config user.email "your.email@address"
   ```
+* threadscope is a gui tool which cannot be launched from the vs code terminal, so in order to use it:
+  * configure vs code to forward ports:
+    * 5901
+    * 6080
+
+    ![ports](./img/ports.png)
+  * now you can open it from your host operating system's browser under http://localhost:6080
+
+  ![fluxbox](./img/fluxbox.png)
+  * [source](https://technology.amis.nl/software-development/run-and-access-gui-inside-vs-code-devcontainers/)
 
 ## features
 
@@ -29,3 +39,4 @@ Haskell anywhere. This repository demonstrates how to run your vscode-based hask
   * stack
   * hls
 * tasks.json - build the code using familiar shortcuts
+* threadscope - a tool for visualising the execution of haskell programs (suggestion from [Parallel and Concurrent Programming in Haskell](https://www.oreilly.com/library/view/parallel-and-concurrent/9781449335939/)

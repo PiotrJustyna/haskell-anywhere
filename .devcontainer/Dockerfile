@@ -26,12 +26,13 @@ RUN apt-get update \
         libnuma-dev \
         libtinfo-dev \
         zlib1g-dev \
+        threadscope \
     && apt-get autoremove -y && apt-get clean -y && rm -rf /var/lib/apt/lists/*
 
 # Install latest GHCup in the non-root user home
 USER $USERNAME
 
-ARG GHC_VERSION="9.2.5"
+ARG GHC_VERSION="9.2.4"
 
 ENV GHCUP_CURL_OPTS="-k"
 ENV BOOTSTRAP_HASKELL_NONINTERACTIVE="1"
