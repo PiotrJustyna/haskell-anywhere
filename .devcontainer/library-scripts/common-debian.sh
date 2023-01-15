@@ -205,6 +205,10 @@ else
     fi
 fi
 
+# 2023-01-15 PJ:
+# --------------
+# here
+
 # Add sudo support for non-root user
 if [ "${USERNAME}" != "root" ] && [ "${EXISTING_NON_ROOT_USER}" != "${USERNAME}" ]; then
     echo $USERNAME ALL=\(root\) NOPASSWD:ALL > /etc/sudoers.d/$USERNAME
